@@ -5,76 +5,87 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <section>
         <nav>
-            <img src="./assests/FES.svg" alt="">
+            <img src="./assests/FES.svg" class="logo" alt="">
             <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="#discord">Discord</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-        <header>
-            <div>
-                <h1>Testing Website</h1>
-                <p>Testing this as a whole complete website.</p>
-                <button>Start Now</button>
-            </div>
-            <figure>
-                <img src="./assests/laptop.png" alt="Home page image">
-            </figure>
-        </header>
+        <div>
+            <header>
+                <div>
+                    <h1>Testing Website</h1>
+                    <p class="subheader">Testing this as a whole complete website.</p>
+                    <button>Start now</button>
+                </div>
+                <figure>
+                    <img src="./assests/laptop.png" alt="Home page image">
+                </figure>
+            </header>
+        </div>
     </section>
 
     <main>
         <section id="about">
             <h2>About</h2>
-            <div>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium placeat amet commodi libero porro aliquam enim eum maxime perspiciatis. Sequi obcaecati error impedit, voluptatum necessitatibus alias possimus fugit accusantium natus?
-                </p>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium placeat amet commodi libero porro aliquam enim eum maxime perspiciatis. Sequi obcaecati error impedit, voluptatum necessitatibus alias possimus fugit accusantium natus?
-                </p>
+            <div class="row">
+                <div class="section_description">
+                    <div class="section_desc">
+                        <p class="about_para">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium placeat amet commodi libero porro aliquam enim eum maxime perspiciatis. Sequi obcaecati error impedit, voluptatum necessitatibus alias possimus fugit accusantium natus?
+                        </p>
+                        <p class="about_para">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium placeat amet commodi libero porro aliquam enim eum maxime perspiciatis. Sequi obcaecati error impedit, voluptatum necessitatibus alias possimus fugit accusantium natus?
+                        </p>
+                    </div>
+                    <figure class="about_image">
+                        <img src="./assests/about.jpg" alt="">
+                    </figure>
+                </div>
             </div>
-            <figure>
-                <img src="./assests/about.jpg" alt="">
-            </figure>
         </section>
 
         <section id="discord">
             <h2>Discord</h2>
-            <div>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores neque fugiat officiis nulla, error molestiae quis nesciunt commodi quod. Officiis sequi quisquam a? Accusamus aut quod necessitatibus dicta harum. Officia.
-                </p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores neque fugiat officiis nulla, error molestiae quis nesciunt commodi quod. Officiis sequi quisquam a? Accusamus aut quod necessitatibus dicta harum. Officia.
-                </p>
+            <div class="row">
+                <div class="section_description">
+                    <figure class="about_image">
+                        <img src="./assests/discord.png" alt="">
+                    </figure>
+                    <div class="section_desc">
+                        <p class="about_para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores neque fugiat officiis nulla, error molestiae quis nesciunt commodi quod. Officiis sequi quisquam a? Accusamus aut quod necessitatibus dicta harum. Officia.
+                        </p>
+                        <p class="about_para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores neque fugiat officiis nulla, error molestiae quis nesciunt commodi quod. Officiis sequi quisquam a? Accusamus aut quod necessitatibus dicta harum. Officia.
+                        </p>
+                    </div>
+                </div>
             </div>
-            <figure>
-                <img src="./assests/discord.png" alt="">
-            </figure>
         </section>
 
         <section id="contact">
             <h2>Contact</h2>
             <form action="">
                 <label for="Email">Email</label>
-                    <input type="text" placeholder="johndoe@example.com">
+                    <input type="email" placeholder="johndoe@example.com">
                 <label for="Message">Message</label>
                     <textarea name="" id="" cols="30" rows="10" placeholder="Nice Website!"></textarea>
+                    <button class="submit">Contact Us</button>
             </form>
-            <button>Submit</button>
         </section>
     </main>
 
     <footer>
-        <img src="./assests/FES.svg" alt="">
-        <div>
-            <a href="#about">About</a>
-            <a href="#discord">Discord</a>
-            <a href="#contact">Contact</a>
+        <img class="footer_image" src="./assests/FES.svg" alt="">
+        <div class="footer_links">
+            <a class="footer_link" href="#about">About</a>
+            <a class="footer_link" href="#discord">Discord</a>
+            <a class="footer_link" href="#contact">Contact</a>
         </div>
         <p>Copyright 2022</p>
     </footer>
