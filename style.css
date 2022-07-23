@@ -165,7 +165,7 @@ footer{
 
 /* Small phones, Tablets, Large Smartphones */
 
-@media (max-width: 728px) {
+@media (max-width: 770px) {
     
     .logo{
         margin: 0 auto;
